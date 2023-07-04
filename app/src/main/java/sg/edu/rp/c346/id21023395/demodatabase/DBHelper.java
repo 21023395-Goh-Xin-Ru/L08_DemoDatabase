@@ -80,7 +80,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 //  getString(1) return second column data
                 //  getInt(0) if data is an integer value
                 tasks.add(cursor.getString(1));
-            } while (cursor.moveToNext());  // Infinite while loop - execute until it is false
+            } while (cursor.moveToNext());
         }
         // Close connection
         cursor.close();
